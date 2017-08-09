@@ -3,6 +3,7 @@
 - [基础入门](#基础入门)
 - [搜索](#搜索)
 - [查询](./query.md)
+- [聚合](./aggs.md)
 
 ## 基础入门
 
@@ -295,7 +296,7 @@ GET /_search
 
 - 分页
 
-分页使用 `size` 和 `from` 组合查询，类似mysql中的 `limit` 和 `offset`
+分页使用 `size` 和 `from` 组合查询，类似mysql中的 `limit` 和 `offset`，其中size + from 不能大于10000
 
   - size : 显示应该返回的结果数量，默认是 10
   - from : 显示应该跳过的初始结果数量，默认是 0
